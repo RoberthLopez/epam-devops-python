@@ -17,6 +17,7 @@ services:
       timeout: 5s
     logging:
       driver: "json-file"
+    image: flask:tag
     networks:
       - flask_network
 
