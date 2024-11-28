@@ -1,0 +1,23 @@
+services:
+  app:
+    build: .
+    container_name: flask-app
+    ports:
+      - "80:80"
+    environment:
+      - FLASK_ENV=production
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      retries: 3
+      start_period: 10s
+      timeout: 5s
+    logging:
+      driver: "json-file"
+    networks:
+      - flask_network
+
+networks:
+  flask_network:
+    driver: bridge
