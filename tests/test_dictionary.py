@@ -1,5 +1,5 @@
 import pytest
-from app.dictionary import Dictionary
+from src.dictionary import Dictionary
 
 @pytest.fixture
 def dictionary():
