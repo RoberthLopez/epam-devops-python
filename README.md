@@ -12,7 +12,7 @@ To build and run the app using Docker Compose, execute the following command:
 docker compose up -d --build
 ```
 
-## Endpoints
+# API Documentation
 
 ## 1. **`/costs`**
 
@@ -27,8 +27,6 @@ docker compose up -d --build
   "tax": 0.1
 }
 ```
-
-# API Documentation
 
 ## 2. **`/concatenate`**
 
