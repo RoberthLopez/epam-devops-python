@@ -1,5 +1,5 @@
 import pytest
-from app.dictionary import Dictionary
+from src.dictionary import Dictionary
 
 @pytest.fixture
 def dictionary():
@@ -8,7 +8,7 @@ def dictionary():
 def test_newentry_valid(dictionary):
     dictionary.newentry("Apple", "A fruit that grows on trees")
     assert dictionary.look("Apple") == "A fruit that grows on trees"
-    
+
 def test_newentry_valid(dictionary):
     dictionary.newentry("apple", "A fruit that grows on trees")
     assert dictionary.look("apple") == "A fruit that grows on trees"

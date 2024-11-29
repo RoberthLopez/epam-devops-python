@@ -1,5 +1,5 @@
 import pytest
-from app.concatenate_letters import concatenate_letters
+from src.concatenate_letters import concatenate_letters
 
 def test_valid_input():
     result = concatenate_letters(["yoda", "best", "has"])

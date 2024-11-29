@@ -1,5 +1,5 @@
 import pytest
-from app.calculate_price import get_total
+from src.calculate_price import get_total
 
 @pytest.fixture
 def costs():

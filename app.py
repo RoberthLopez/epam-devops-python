@@ -1,6 +1,6 @@
-from app.calculate_price import get_total
-from app.dictionary import Dictionary
-from app.concatenate_letters import concatenate_letters
+from src.calculate_price import get_total
+from src.dictionary import Dictionary
+from src.concatenate_letters import concatenate_letters
 from flask import Flask, request, jsonify
 
 

@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM python
 
 WORKDIR /app
 
@@ -10,6 +10,8 @@ COPY . .
 
 EXPOSE 80
 
-# RUN pytest tests
+RUN pytest tests
 
-CMD ["python", "app.py"]
+ENTRYPOINT [ "gunicorn" ]
+
+CMD ["app:app", "-b", "0.0.0.0:80"]
